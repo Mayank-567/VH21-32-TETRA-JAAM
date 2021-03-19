@@ -1,0 +1,17 @@
+:root{
+    --clr-bg : #212747 ;
+    --clr-secondary-bg : #353F63;
+    --clr-primary: beige;
+    --clr-font :#4D81BC;
+    --font-family :open sans;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: var(--clr-bg);
+    font-family: var(--font-family);
+}
