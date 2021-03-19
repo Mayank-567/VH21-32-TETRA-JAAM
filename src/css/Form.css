@@ -30,14 +30,15 @@ form{
     margin-bottom:.1em;
     margin-left: .5em;
 }
-.gender-div label{
+.gender-div label, .physically-active-div label{
     display:inline-block;
 }
-label[for="gender"]{
-    display:inline-block;
-}
-.gender-div input[type="radio"]{
+
+.gender-div input[type="radio"], .physically-active-div input[type="radio"]{
     width:1em;
+}
+label[for="gender_male"], label[for="active"]{
+    margin-right:2em;
 }
 .info-div input,select{
     margin-bottom:.8em;
@@ -86,7 +87,4 @@ option{
 .btn:hover{
     background:var(--clr-primary);
     color:var(--clr-secondary-bg)
-}
-label[for="gender_male"]{
-    margin-right:2em;
 }
