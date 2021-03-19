@@ -1,8 +1,10 @@
 import './css/Form.css'
 function Form() {
     return (
+        <div className="Form">
+            <h1>Cardiovascular Disease Prediction</h1>
         <form action="" method="post" class='main-form'>
-            <h1>Form</h1>
+            <h2>Attribute Information Form</h2>
             <div className="personal-info info-div">
 
                 <label htmlFor="dob">Date of Birth</label>
@@ -15,10 +17,13 @@ function Form() {
                 <input type="number" name="weight" id="weight" />
 
                 <label htmlFor="gender">Gender</label>
-                <input type="radio" name="gender" id="gender_male" checked />
-                <label htmlFor="gender_male">Male</label>
-                <input type="radio" name="gender" id="gender_female" />
-                <label htmlFor="gender_female">Female</label>
+                <div className="gender-div">
+
+                    <input type="radio" name="gender" id="gender_male" checked />
+                    <label htmlFor="gender_male">Male</label>
+                    <input type="radio" name="gender" id="gender_female" />
+                    <label htmlFor="gender_female">Female</label>
+                </div>
             </div>
 
             <div className="main-info info-div">
@@ -46,6 +51,7 @@ function Form() {
             </div>
             <input type="submit" value="Predict" className="btn"/>
         </form>
+        </div>
     )
 }
 

@@ -1,0 +1,31 @@
+.Output{
+    display:grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    padding:1em;
+    gap:1em;
+}
+.charts{
+    grid-column:1/2;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:1em;
+}
+.prediction-output{
+    grid-column:2/3;
+    background:var(--clr-secondary-bg);
+    border-radius:20px;
+
+}
+.doctor-info{
+    grid-column:3/-1;
+    background:var(--clr-secondary-bg);
+    border-radius:20px;
+}
+.title{
+    text-align:center;
+    margin:.5em auto;
+    /* background:var(--clr-bg); */
+    /* width:fit-content; */
+    /* padding: */
+}

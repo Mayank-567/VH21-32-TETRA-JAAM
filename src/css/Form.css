@@ -1,27 +1,43 @@
+.Form h1{
+    text-align:center;
+}
+h2{
+    font-weight:600;
+}
 form{
     background-color: var(--clr-secondary-bg);
     color:var(--clr-primary);
-    grid-column:2/3;
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin:1em 0;
-    /* justify-content: center; */
+    margin: 1em auto;
+    border-radius:20px;
+    padding:1em 0;
+    width:max(40em, 60vw);
     
 }
-.info-div{
+
+.info-div,.btn{
     margin:1em 0;
-    /* background:red; */
-    width:50%;
-    padding:1em;
+    width:70%;
+    padding:2em;
     border:2px solid gray;
-    border-radius:25px;
+    border-radius:20px;
 }
 .info-div label{
     
     display:block;
     margin-bottom:.1em;
     margin-left: .5em;
+}
+.gender-div label{
+    display:inline-block;
+}
+label[for="gender"]{
+    display:inline-block;
+}
+.gender-div input[type="radio"]{
+    width:1em;
 }
 .info-div input,select{
     margin-bottom:.8em;
@@ -34,6 +50,7 @@ form{
     font-family: var(--font-family);
     outline:none;
     width:100%;
+    transition: 500ms ease oapcity;
 
 }
 .info-div input:hover, select:hover,input:focus, select:focus{
@@ -53,7 +70,6 @@ option{
     background-color: var(--clr-secondary-bg);
 }
 .btn{
-    width:50%;
     background:transparent;
     padding:.5em;
     border-radius: 100vw;
@@ -65,8 +81,12 @@ option{
     cursor:pointer;
     outline:none;
     transition:.5s ease-out;
+    transition-property: color background-color;
 }
 .btn:hover{
     background:var(--clr-primary);
     color:var(--clr-secondary-bg)
+}
+label[for="gender_male"]{
+    margin-right:2em;
 }

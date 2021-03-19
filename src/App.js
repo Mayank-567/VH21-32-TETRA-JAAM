@@ -1,11 +1,28 @@
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom"
+
+import Form from './Form'
+import Output from './Output'
+
+import '../node_modules/react-vis/dist/style.css';
 import './css/App.css';
-import Form from './Form.js'
 function App() {
+
   return (
-    <div className="App">
-      <h1>Welcome</h1>
-      <Form/>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/output">
+          <Output/>
+        </Route>
+        <Route path='/'>
+          <Form />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
