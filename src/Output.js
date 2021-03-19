@@ -1,4 +1,6 @@
 import BarCharts from './BarCharts';
+import CardiologistList from './CardiologistList'
+
 
 import './css/Output.css'
 
@@ -18,6 +20,7 @@ function Output(){
             </div>
             <div className="doctor-info">
                 <h2 class="title" >Cardiologists Near You</h2>
+                <CardiologistList/>
             </div>
 
     </div>
