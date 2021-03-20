@@ -1,0 +1,26 @@
+.map{
+    /* padding: 2em; */
+    margin: 1em;
+}
+
+.hospitals{
+    padding: 1em;
+    /* border: solid; */
+    
+}
+.hospitals p{
+    /* margin: 5em; */
+    background-color: #4D81BC;
+    height: 2em;
+    margin: 1em;
+    /* border: solid; */
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0.3em;
+    
+    
+    
+}
+.hospitals a:link{
+    text-decoration: none;
+}

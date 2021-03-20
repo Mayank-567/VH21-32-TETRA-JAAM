@@ -11,6 +11,8 @@
 // export default CardiologistList
 
 import React, { Component } from 'react'
+import './css/Cardiologist.css'
+import './css/Output.css'
 
 export class CardiologistList extends Component {
     constructor(props) {
@@ -57,13 +59,15 @@ export class CardiologistList extends Component {
             {/* https://www.google.com/maps/embed/v1/place?key=AIzaSyANkBIHcqJdLSJ-cX7Qdu1huVD9dhSfFys
     &q=Space+Needle,Seattle+WA */}
             <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyANkBIHcqJdLSJ-cX7Qdu1huVD9dhSfFys
-    &q=cardio,hospital&q=latitude,longitude"></iframe>
-            <h2>Top Cardiology hospitals</h2>
+    &q=cardio,hospital&q=latitude,longitude" className="map"></iframe>
+            <h2 className="title">Top Cardiology hospitals</h2>
             {/* <div></div> */}
-            <a href="https://www.apollohospitals.com/">Appolo Hospital</a>
-            <a href="https://www.fortisescorts.in/">Fortis Escorts Heart Institute</a>
-            <a href="https://www.jaypeehealthcare.com/">Jaypee Hospital</a>
-            <a href="https://www.medanta.org/">Medanta, The Medicity</a>
+            <div className="hospitals">
+            <p><a href="https://www.apollohospitals.com/">Appolo Hospital</a></p>
+            <p><a href="https://www.fortisescorts.in/">Fortis Escorts Heart Institute</a></p>
+            <p><a href="https://www.jaypeehealthcare.com/">Jaypee Hospital</a></p>
+            <p><a href="https://www.medanta.org/">Medanta, The Medicity</a></p>
+            </div>
 
 
             </div>
