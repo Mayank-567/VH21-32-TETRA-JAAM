@@ -1,0 +1,6 @@
+.age-chart{
+    grid-column:1/-1;
+    background:var(--clr-secondary-bg);
+    border-radius:20px;
+    padding:1em;
+}

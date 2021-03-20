@@ -29,3 +29,12 @@
     /* width:fit-content; */
     /* padding: */
 }
+.rv-xy-plot{
+    margin:0 auto !important;
+    display:block;
+    width:100%;
+
+}
+.rv-xy-plot__inner{
+    width:100% !important;
+}

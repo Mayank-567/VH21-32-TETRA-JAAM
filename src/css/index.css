@@ -4,6 +4,7 @@
     --clr-primary: beige;
     --clr-font :#4D81BC;
     --font-family :open sans;
+    --linear-gradient : linear-gradient(#08B5B6, #0ECC9E)
 }
 *{
     margin:0;
@@ -13,6 +14,7 @@
 }
 body{
     background-color: var(--clr-bg);
+    /* background: var(--linear-gradient); */
     font-family: var(--font-family);
     color : var(--clr-primary)
 }
