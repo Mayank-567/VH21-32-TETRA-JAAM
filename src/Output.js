@@ -4,15 +4,19 @@ import AgeChart from './AgeChart'
 import './css/Output.css'
 
 function Output({pred_data}){
-    var gender_data = [{ x: 'Men', y: 60 }, { x: 'Women', y: 65 }]
-    var age_data = [{ x: 'Men', y: 60 }, { x: 'Women', y: 65 },{ x: 'Alcohol', y: 55 }, { x: 'Smokers', y: 80 },{ x: 'Active', y: 55 }, { x: 'Non-active', y: 80 }]
-    var data3 = [{ x: 'Alcohol', y: 55 }, { x: 'Smokers', y: 80 }]
-    var data4 = [{ x: 'Alcohol', y: 45 }, { x: 'Smokers', y: 20 }]
+    var gender_data = [{ x: 'Men', y: 50.5 }, { x: 'Women', y: 49.6 }]
+    var age_data = [{ x: '0-20', y: 0 },
+                    { x: '20-40', y: 25.27 },
+                    { x: '40-60', y: 69.63 },
+                    { x: '60-80', y: 30.11 },
+                    ]
+    var active = [{ x: 'Alcohol', y: 48.4 }, { x: 'Smokers', y: 47.4 }]
+    var nonActive = [{ x: 'Alcohol', y: 50.8 }, { x: 'Smokers', y: 52.5 }]
     return (
         <div className="Output">
             <div className="charts">
                 <GenderChart data1={gender_data} />
-                <SmokingAlcoholChart data1={data3} data2={data4} />
+                <SmokingAlcoholChart data1={active} data2={nonActive} />
             </div>
             <div className="prediction-output">
                 <h2 class="title" >Output</h2>
