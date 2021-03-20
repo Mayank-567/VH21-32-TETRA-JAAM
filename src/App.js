@@ -17,10 +17,10 @@ function App() {
     <Router>
       <Switch>
         <Route path="/output">
-          <Output/>
+          <Output pred_data={pred_data}/>
         </Route>
         <Route path='/'>
-          <Form />
+          <Form pred_data={pred_data} setPredData={setPredData}/>
         </Route>
       </Switch>
     </Router>
