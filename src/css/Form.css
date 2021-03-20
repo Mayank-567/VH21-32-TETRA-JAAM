@@ -34,11 +34,18 @@ form{
     display:inline-block;
 }
 
-.gender-div input[type="radio"], .physically-active-div input[type="radio"]{
-    width:1em;
+input[type="radio"]{
+    width:1em !important;
+    background:rgb(34, 15, 15);
 }
 label[for="gender_male"], label[for="active"]{
     margin-right:2em;
+}
+input[type="radio"] + label{
+    display:inline-block;
+    margin-right:2em;
+    margin-bottom:1.5em;
+
 }
 .info-div input,select{
     margin-bottom:.8em;

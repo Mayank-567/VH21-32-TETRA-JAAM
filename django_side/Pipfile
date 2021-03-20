@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 django = "*"
 django-cors-headers = "*"
+pickle-mixin = "*"
+scikit-learn = "*"
 
 [dev-packages]
 

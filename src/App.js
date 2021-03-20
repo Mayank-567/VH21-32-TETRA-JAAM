@@ -10,16 +10,17 @@ import Output from './Output'
 
 import '../node_modules/react-vis/dist/style.css';
 import './css/App.css';
+import {useState} from 'react'
 function App() {
-
+  const [pred_data, setPredData] = useState({})
   return (
     <Router>
       <Switch>
         <Route path="/output">
-          <Output/>
+          <Output pred_data={pred_data}/>
         </Route>
         <Route path='/'>
-          <Form />
+          <Form pred_data={pred_data} setPredData={setPredData}/>
         </Route>
       </Switch>
     </Router>
