@@ -3,9 +3,9 @@ import {
   Switch,
   Route,
   Link
-} from "react-router-dom"
+} from "react-router-dom";
+import Form from './Form';
 
-import Form from './Form'
 import Output from './Output'
 
 import '../node_modules/react-vis/dist/style.css';

@@ -1,6 +1,10 @@
+
+import BarCharts from './BarCharts';
+import CardiologistList from './CardiologistList'
 import SmokingAlcoholChart from './SmokingAlcoholChart';
 import GenderChart from './GenderChart';
 import AgeChart from './AgeChart'
+
 import './css/Output.css'
 
 function Output({pred_data}){
@@ -24,6 +28,7 @@ function Output({pred_data}){
             </div>
             <div className="doctor-info">
                 <h2 class="title" >Cardiologists Near You</h2>
+                <CardiologistList/>
             </div>
             <AgeChart data1={age_data}/>
 
