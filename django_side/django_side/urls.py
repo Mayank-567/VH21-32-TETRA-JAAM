@@ -18,5 +18,6 @@ from django.urls import path
 from main.views import get_form_data
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('send/', get_form_data, name="get-form-data")
+    path('send/', get_form_data, name="get-form-data"),
+    
 ]
